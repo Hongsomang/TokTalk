@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "241618808323",
+    "firebase_url": "https://toktalk-331fb.firebaseio.com",
+    "project_id": "toktalk-331fb",
+    "storage_bucket": "toktalk-331fb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:241618808323:android:58d3a42af58a4fd2",
+        "android_client_info": {
+          "package_name": "com.example.dsm2016.toktalk"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "241618808323-606ehoj9pojqbrivqnkcutgrdsutauod.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.dsm2016.toktalk",
+            "certificate_hash": "cedf59c1ee713a46d6d5e39cffc6ad2419f5e698"
+          }
+        },
+        {
+          "client_id": "241618808323-k26r52a78lua8d85e6csnqpes43h06ok.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCkfQjQSRdRBApr-j58DjBPEMwyzZAmEb0"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "241618808323-k26r52a78lua8d85e6csnqpes43h06ok.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

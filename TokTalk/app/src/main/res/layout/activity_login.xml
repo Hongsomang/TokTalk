@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F7AA97"
+    tools:context="com.example.dsm2016.toktalk.LoginActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:src="@drawable/splash"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/login_center"/>
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="150dp"
+            android:layout_centerHorizontal="true"
+            android:layout_above="@+id/login_center"
+            android:src="@drawable/toktalk" />
+
+        <RelativeLayout
+            android:id="@+id/login_center"
+            android:layout_width="match_parent"
+            android:layout_height="300dp"
+            android:layout_centerInParent="true"
+            android:background="#DE7E73">
+
+            <TextView
+                android:id="@+id/id_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="10dp"
+                android:gravity="bottom"
+                android:text="아이디"
+                android:textColor="#7C7877"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/login_id_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:textSize="15dp"
+                android:layout_below="@+id/id_tv"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="아이디 입력"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF" />
+
+            <TextView
+                android:id="@+id/pwd_tv"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_below="@+id/login_id_et"
+                android:layout_marginLeft="10dp"
+                android:gravity="bottom"
+                android:text="패스워드"
+                android:textColor="#7C7877"
+                android:textSize="15dp" />
+
+            <EditText
+                android:id="@+id/login_pwd_et"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/pwd_tv"
+                android:layout_marginLeft="8dp"
+                android:layout_marginRight="8dp"
+                android:hint="패스워드 입력"
+                android:textSize="15dp"
+                android:inputType="textPassword"
+                android:textColor="#FFF"
+                android:textColorHint="#FFF" />
+
+            <Button
+                android:id="@+id/login_btn"
+                android:layout_width="80dp"
+                android:layout_height="50dp"
+                android:layout_alignParentBottom="true"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/login_rounded"
+                android:text="확인"
+                android:textColor="#FFF"
+                android:textSize="15dp" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/login_center">
+
+            <TextView
+                android:id="@+id/signup_btn"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:gravity="center"
+                android:textColor="#7C7877"
+                android:text="회원이 아닌가요?"
+                android:textSize="15dp" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</LinearLayout>
