@@ -6,138 +6,147 @@
     android:layout_height="match_parent"
     android:background="#F7AA97"
     tools:context="com.example.dsm2016.toktalk.SignupAcitivity">
-<RelativeLayout
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="SIGN UP"
-        android:textColor="#FFF"
-        android:layout_centerHorizontal="true"
-        android:textSize="40dp"
-        android:layout_above="@+id/signup_layout"/>
+
     <RelativeLayout
-        android:id="@+id/signup_layout"
         android:layout_width="match_parent"
-        android:layout_height="450dp"
-        android:layout_alignParentBottom="true">
-        <android.support.v7.widget.CardView
-        android:id="@+id/name_cv"
-        android:layout_width="match_parent"
-        android:layout_height="60dp"
-        android:layout_marginLeft="30dp"
-        android:layout_marginRight="30dp"
-        android:layout_marginTop="50dp">
-        <EditText
-            android:id="@+id/signup_name_et"
-            android:background="@null"
-            android:hint="name"
-            android:textSize="15dp"
-            android:textColorHint="#D9D4CF"
-            android:layout_marginLeft="10dp"
-            android:layout_marginRight="10dp"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            />
-    </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/id_cv"
-            android:layout_below="@+id/name_cv"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            >
-            <EditText
-                android:id="@+id/signup_email_et"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:textSize="15dp"
-                android:textColorHint="#D9D4CF"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:hint="email"/>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/pwd_cv"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_below="@+id/id_cv"
-          >
-            <EditText
-                android:id="@+id/signup_pwd_et"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:textSize="15dp"
-                android:textColorHint="#D9D4CF"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:inputType="textPassword"
-                android:hint="pwd"/>
-        </android.support.v7.widget.CardView>
-        <android.support.v7.widget.CardView
-            android:id="@+id/confirm_pwd_cv"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_below="@+id/pwd_cv">
-            <EditText
-                android:id="@+id/signup_cofirm_pwd_et"
-                android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:background="@null"
-                android:inputType="textPassword"
-                android:textSize="15dp"
-                android:textColorHint="#D9D4CF"
-                android:layout_marginLeft="10dp"
-                android:layout_marginRight="10dp"
-                android:hint="confirm pwd"/>
-        </android.support.v7.widget.CardView>
-        <Button
-            android:id="@+id/signup"
-            android:layout_width="match_parent"
-            android:layout_height="60dp"
-            android:layout_marginLeft="30dp"
-            android:layout_marginRight="30dp"
-            android:layout_marginTop="10dp"
-            android:text="SIGN UP"
-            android:textSize="15dp"
-            android:textColor="#F16B6F"
-            android:background="@drawable/signup_rounded"
-            android:layout_below="@+id/confirm_pwd_cv"/>
-        <RelativeLayout
+        android:layout_height="match_parent">
+
+        <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_below="@+id/signup"
-            android:layout_marginTop="10dp"
+            android:layout_above="@+id/signup_layout"
             android:layout_centerHorizontal="true"
-            >
-            <TextView
-                android:id="@+id/login_tv"
+            android:text="SIGN UP"
+            android:textColor="#FFF"
+            android:textSize="40dp" />
+
+        <RelativeLayout
+            android:id="@+id/signup_layout"
+            android:layout_width="match_parent"
+            android:layout_height="450dp"
+            android:layout_alignParentBottom="true">
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/name_cv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="50dp">
+
+                <EditText
+                    android:id="@+id/signup_name_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="name"
+                    android:textColorHint="#D9D4CF"
+                    android:textSize="15dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/id_cv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_marginRight="30dp"
+                android:layout_below="@+id/name_cv"
+                android:layout_alignLeft="@+id/pwd_cv"
+                android:layout_alignStart="@+id/pwd_cv">
+
+                <EditText
+                    android:id="@+id/signup_email_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="email"
+                    android:textColorHint="#D9D4CF"
+                    android:textSize="15dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/pwd_cv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/id_cv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/signup_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="pwd"
+                    android:inputType="textPassword"
+                    android:textColorHint="#D9D4CF"
+                    android:textSize="15dp" />
+            </android.support.v7.widget.CardView>
+
+            <android.support.v7.widget.CardView
+                android:id="@+id/confirm_pwd_cv"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/pwd_cv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp">
+
+                <EditText
+                    android:id="@+id/signup_cofirm_pwd_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="10dp"
+                    android:layout_marginRight="10dp"
+                    android:background="@null"
+                    android:hint="confirm pwd"
+                    android:inputType="textPassword"
+                    android:textColorHint="#D9D4CF"
+                    android:textSize="15dp" />
+            </android.support.v7.widget.CardView>
+
+            <Button
+                android:id="@+id/signup"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:layout_below="@+id/confirm_pwd_cv"
+                android:layout_marginLeft="30dp"
+                android:layout_marginRight="30dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/signup_rounded"
+                android:text="SIGN UP"
+                android:textColor="#F16B6F"
+                android:textSize="15dp" />
+
+            <RelativeLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:text="회원가입을 하셨나요?"
-                />
-            <TextView
-                android:id="@+id/signin"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="10dp"
-                android:text="로그인하기"
-                android:textStyle="bold"
-                android:layout_toRightOf="@+id/login_tv"
-                />
+                android:layout_below="@+id/signup"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="10dp">
+
+                <TextView
+                    android:id="@+id/login_tv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="회원가입을 하셨나요?" />
+
+                <TextView
+                    android:id="@+id/signin"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="10dp"
+                    android:layout_toRightOf="@+id/login_tv"
+                    android:text="로그인하기"
+                    android:textStyle="bold" />
+            </RelativeLayout>
+
+
         </RelativeLayout>
 
-
-
     </RelativeLayout>
-
-</RelativeLayout>
 </LinearLayout>
